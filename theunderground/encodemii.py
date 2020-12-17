@@ -13,4 +13,3 @@ def parade_encode(infile):
     data = base64.b64encode(encodemii.read())
     encodemii.close()
     remove("temp.jpg")
-    return data

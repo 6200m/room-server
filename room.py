@@ -27,7 +27,6 @@ with app.test_request_context():
 
 # Import routes here.
 from url1 import (
-    allbin,
     beacon,
     category_n,
     eula,
@@ -37,12 +36,13 @@ from url1 import (
     paylink,
     wall_metadata,
 )
-import url1.special.all, url1.special.page
+from url1.special import all, allbin, page
 
 from url2 import reginfo, related, search
 
 from url3.pay import category_header, event_today, wall_metadata
-from theunderground import admin
+
+import theunderground.admin
 
 if app.debug:
 
