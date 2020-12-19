@@ -22,6 +22,7 @@ def movie_metadata(unk, movie_id: int):
         "genre": metadata.genre,
         "sppageid": metadata.sp_page_id,
         "dsdist": metadata.ds_dist,
+        "dsmovid": 20,
         "staff": metadata.staff,
     }
 
